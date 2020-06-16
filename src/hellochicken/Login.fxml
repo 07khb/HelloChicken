@@ -1,18 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane maxWidth="-Infinity" prefHeight="150.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxWidth="-Infinity" prefHeight="185.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellochicken.LoginController">
 	<children>
-      <Label fx:id="idlabel" layoutX="12.0" layoutY="28.0" text="아이디" />
-      <TextField fx:id="txtid" layoutX="61.0" layoutY="24.0" prefHeight="23.0" prefWidth="156.0" />
-      <Label fx:id="password" layoutX="6.0" layoutY="66.0" text="패스워드" />
-      <PasswordField fx:id="paswF" layoutX="61.0" layoutY="62.0" prefHeight="23.0" prefWidth="156.0" />
-      <Button fx:id="btne" layoutX="177.0" layoutY="106.0"  text="취소" />
-      <Button fx:id="btnl" layoutX="224.0" layoutY="21.0"  prefHeight="65.0" prefWidth="65.0" text="로그인" />
-      <Button fx:id="btnm" layoutX="75.0" layoutY="106.0"  text="회원가입" />
-   </children>
+		<Label fx:id="idlabel" layoutX="12.0" layoutY="28.0" text="아이디" />
+		<TextField fx:id="txtid" layoutX="61.0" layoutY="24.0" prefHeight="23.0" prefWidth="156.0" />
+		<Label fx:id="password" layoutX="6.0" layoutY="66.0" text="패스워드" />
+		<PasswordField fx:id="paswF" layoutX="61.0" layoutY="62.0" prefHeight="23.0" prefWidth="156.0" />
+		<Button fx:id="btne" layoutX="177.0" layoutY="130.0" style="-fx-background-color: white;" text="취소" />
+		<Button fx:id="btnm" layoutX="75.0" layoutY="131.0" onMouseClicked="#handleButtonAction" style="-fx-background-color: white;" text="회원가입" textFill="#ffa55b" />
+		<Label fx:id="lblErrors" layoutX="61.0" layoutY="100.0" prefHeight="23.0" prefWidth="156.0" />
+		<Button fx:id="btnl" layoutX="224.0" layoutY="21.0" onMouseClicked="#handleBtnlAction" prefHeight="65.0" prefWidth="65.0" style="-fx-background-color: orange;" text="로그인" textFill="WHITE" />
+	</children>
 </AnchorPane>
