@@ -6,32 +6,48 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="502.0" prefWidth="317.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellochicken.JoinController">
+<AnchorPane prefHeight="502.0" prefWidth="317.0"
+	style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8"
+	xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="hellochicken.JoinController">
 	<children>
 		<Label layoutX="108.0" layoutY="28.0" text="회원가입">
 			<font>
 				<Font size="20.0" />
 			</font>
 		</Label>
-		<Label layoutX="10.0" layoutY="92.0" prefHeight="25.0" prefWidth="40.0" text="아이디" />
+		<Label layoutX="10.0" layoutY="92.0" prefHeight="25.0"
+			prefWidth="40.0" text="아이디" />
 		<Label layoutX="6.0" layoutY="142.0" text="비밀번호" />
 		<Label layoutX="18.0" layoutY="186.0" text="이름" />
 		<Label layoutX="18.0" layoutY="229.0" text="주소" />
 		<Label layoutX="6.0" layoutY="374.0" text="전화번호" />
-		<TextField fx:id="txtId" layoutX="59.0" layoutY="92.0" prefHeight="25.0" prefWidth="167.0" />
-      <Label fx:id="lblErrors" layoutX="59.0" layoutY="145.0" prefHeight="25.0" prefWidth="177.0" />
-		<Button fx:id="btnConfirm" layoutX="236.0" layoutY="88.0" mnemonicParsing="false" prefHeight="33.0" prefWidth="70.0" style="-fx-background-color: orange;" text="중복확인" textFill="WHITE">
-         <font>
-            <Font size="13.0" />
-         </font>
+		<TextField fx:id="txtId" layoutX="59.0" layoutY="92.0"
+			prefHeight="25.0" prefWidth="167.0" />
+		<Label fx:id="lblErrors" layoutX="59.0" layoutY="145.0"
+			prefHeight="25.0" prefWidth="177.0" />
+		<Button fx:id="btnConfirm" layoutX="236.0" layoutY="88.0"
+			mnemonicParsing="false" prefHeight="33.0" prefWidth="70.0"
+			style="-fx-background-color: orange;" text="중복확인" textFill="WHITE">
+			<font>
+				<Font size="13.0" />
+			</font>
 		</Button>
-		<PasswordField fx:id="password" layoutX="59.0" layoutY="137.0" prefHeight="25.0" prefWidth="167.0" />
-		<TextField fx:id="txtName" layoutX="59.0" layoutY="181.0" prefHeight="25.0" prefWidth="167.0" />
-      <TextArea fx:id="txtAddress" layoutX="59.0" layoutY="229.0" prefHeight="123.0" prefWidth="244.0" />
-		<TextField fx:id="phoneNum" layoutX="59.0" layoutY="369.0" prefHeight="25.0" prefWidth="167.0" />
-		<Button fx:id="btnJoin" layoutX="119.0" layoutY="435.0" mnemonicParsing="false" onAction="#handleBtnJoinAction" prefHeight="33.0" prefWidth="80.0" style="-fx-background-color: orange;" text="가입하기" textFill="WHITE">
-         <font>
-            <Font size="13.0" />
-         </font></Button>
+		<PasswordField fx:id="password" layoutX="59.0"
+			layoutY="137.0" prefHeight="25.0" prefWidth="167.0" />
+		<TextField fx:id="txtName" layoutX="59.0" layoutY="181.0"
+			prefHeight="25.0" prefWidth="167.0" />
+		<TextArea fx:id="txtAddress" layoutX="59.0" layoutY="229.0"
+			prefHeight="123.0" prefWidth="244.0" />
+		<TextField fx:id="phoneNum" layoutX="59.0" layoutY="369.0"
+			prefHeight="25.0" prefWidth="167.0" promptText="예) 01012345678" />
+		<Button fx:id="btnJoin" layoutX="119.0" layoutY="435.0"
+			mnemonicParsing="false" onAction="#handleBtnJoinAction"
+			prefHeight="33.0" prefWidth="80.0"
+			style="-fx-background-color: orange;" text="가입하기" textFill="WHITE">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Button>
 	</children>
 </AnchorPane>

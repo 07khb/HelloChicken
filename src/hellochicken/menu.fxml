@@ -9,39 +9,49 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="900.0" prefWidth="450.0" style="-fx-background-color: white;" stylesheets="@menu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellochicken.MenuController">
+<AnchorPane prefHeight="900.0" prefWidth="450.0"
+	style="-fx-background-color: white;" stylesheets="@menu.css"
+	xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+	fx:controller="hellochicken.MenuController">
 	<children>
-		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0"
+			layoutY="116.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/1.jpg" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0" layoutY="228.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0"
+			layoutY="228.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/2.jpg" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0" layoutY="351.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0"
+			layoutY="351.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/3.jpg" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0" layoutY="485" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="100.0" fitWidth="148.0" layoutX="10.0"
+			layoutY="485" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/4.PNG" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="122.0" fitWidth="125.0" layoutY="636.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="122.0" fitWidth="125.0"
+			layoutY="636.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/5.PNG" />
 			</image>
 		</ImageView>
-		<ImageView fitHeight="114.0" fitWidth="100.0" layoutX="16.0" layoutY="769.0" pickOnBounds="true" preserveRatio="true">
+		<ImageView fitHeight="114.0" fitWidth="100.0" layoutX="16.0"
+			layoutY="769.0" pickOnBounds="true" preserveRatio="true">
 			<image>
 				<Image url="@../image/6.PNG" />
 			</image>
 		</ImageView>
-		<Label layoutX="156.0" layoutY="20.0" text="차림표" underline="true">
+		<Label layoutX="156.0" layoutY="20.0" text="차림표"
+			underline="true">
 			<font>
 				<Font size="46.0" />
 			</font>
@@ -51,27 +61,36 @@
 				<Font size="18.0" />
 			</font>
 		</Label>
-		<CheckBox fx:id="hu" layoutX="167.0" layoutY="116.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0" text="후라이드   10,000원" textFill="#e8aa55">
+		<CheckBox fx:id="hu" layoutX="167.0" layoutY="116.0"
+			onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0"
+			text="후라이드   10,000원" textFill="#e8aa55">
 			<font>
 				<Font size="15.0" />
 			</font>
 		</CheckBox>
-		<CheckBox fx:id="yang" layoutX="167.0" layoutY="228.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0" text="양념         11,000원" textFill="#e1745e">
+		<CheckBox fx:id="yang" layoutX="167.0" layoutY="228.0"
+			onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0"
+			text="양념         11,000원" textFill="#e1745e">
 			<font>
 				<Font size="15.0" />
 			</font>
 		</CheckBox>
-		<CheckBox fx:id="gan" layoutX="167.0" layoutY="351.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0" text="간장         11,000원" textFill="#944903">
+		<CheckBox fx:id="gan" layoutX="167.0" layoutY="351.0"
+			onAction="#handleChkAction" prefHeight="21.0" prefWidth="187.0"
+			text="간장         11,000원" textFill="#944903">
 			<font>
 				<Font size="15.0" />
 			</font>
 		</CheckBox>
-		<Label layoutX="167.0" layoutY="472.0" prefHeight="21.0" prefWidth="125.0" text="반반 ">
+		<Label layoutX="167.0" layoutY="472.0" prefHeight="21.0"
+			prefWidth="125.0" text="반반 ">
 			<font>
 				<Font size="15.0" />
 			</font>
 			<textFill>
-				<LinearGradient endX="0.5952380952380952" endY="0.7047619047619047" startX="0.4476190476190476" startY="0.33809523809523806">
+				<LinearGradient endX="0.5952380952380952"
+					endY="0.7047619047619047" startX="0.4476190476190476"
+					startY="0.33809523809523806">
 					<stops>
 						<Stop color="#e8aa55" />
 						<Stop color="#e0745e" offset="0.6608391608391608" />
@@ -80,62 +99,83 @@
 				</LinearGradient>
 			</textFill>
 		</Label>
-		<VBox layoutX="160" layoutY="500" prefHeight="83.0" prefWidth="289.0" spacing="10.0">
-   <children>
-   			<CheckBox fx:id="set1" onAction="#handleChkAction" prefHeight="21.0" prefWidth="268.0" text="후라이드+간장     12,000원" textFill="#e8aa55" userData="후라이드+간장">
-   				<font>
-   					<Font size="15.0" />
-   				</font>
-   			</CheckBox>
-   			<CheckBox fx:id="set2" onAction="#handleChkAction" prefHeight="21.0" prefWidth="276.0" text="후라이드+양념     12,000원" textFill="#e1745e" userData="후라이드+양념">
-   				<font>
-   					<Font size="15.0" />
-   				</font>
-   			</CheckBox>
-   			<CheckBox fx:id="set3" onAction="#handleChkAction" prefHeight="21.0" prefWidth="246.0" text="양념+간장           13,000원" textFill="#944903" userData="양념+간장">
-   				<font>
-   					<Font size="15.0" />
-   				</font>
-   			</CheckBox>
-   </children>
-		</VBox>
-		<Label layoutX="10.0" layoutY="600.0" text="음료">
-			<font>
-				<Font size="18.0" />
-			</font>
-		</Label>
-		<Label layoutX="165.0" layoutY="636.0" prefHeight="27.0" prefWidth="36.0" text="콜라">
-			<font>
-				<Font size="15.0" />
-			</font>
-		</Label>
-		<Label layoutX="167.0" layoutY="769.0" text="사이다" textFill="#3aab2e">
-			<font>
-				<Font size="15.0" />
-			</font>
-		</Label>
-		<VBox layoutX="157.0" layoutY="663.0" prefHeight="61.0" prefWidth="202.0" spacing="10.0">
+		<VBox layoutX="160" layoutY="500" prefHeight="83.0"
+			prefWidth="289.0" spacing="10.0">
 			<children>
-				<CheckBox fx:id="co500" graphicTextGap="200.0" layoutX="167.0" layoutY="663.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="186.0" text="500ml       1,000원" userData="콜라500ml">
+				<CheckBox fx:id="set1" onAction="#handleChkAction"
+					prefHeight="21.0" prefWidth="268.0" text="후라이드+간장     12,000원"
+					textFill="#e8aa55" userData="후라이드+간장">
 					<font>
 						<Font size="15.0" />
 					</font>
 				</CheckBox>
-				<CheckBox fx:id="co125" layoutX="167.0" layoutY="696.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="188.0" text="1.25ml      2,000원" userData="콜라1.25ml">
+				<CheckBox fx:id="set2" onAction="#handleChkAction"
+					prefHeight="21.0" prefWidth="276.0" text="후라이드+양념     12,000원"
+					textFill="#e1745e" userData="후라이드+양념">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</CheckBox>
+				<CheckBox fx:id="set3" onAction="#handleChkAction"
+					prefHeight="21.0" prefWidth="246.0" text="양념+간장           13,000원"
+					textFill="#944903" userData="양념+간장">
 					<font>
 						<Font size="15.0" />
 					</font>
 				</CheckBox>
 			</children>
 		</VBox>
-		<VBox layoutX="162.0" layoutY="790.0" prefHeight="61.0" prefWidth="202.0" spacing="10.0">
+		<Label layoutX="10.0" layoutY="600.0" text="음료">
+			<font>
+				<Font size="18.0" />
+			</font>
+		</Label>
+		<Label layoutX="165.0" layoutY="636.0" prefHeight="27.0"
+			prefWidth="36.0" text="콜라">
+			<font>
+				<Font size="15.0" />
+			</font>
+		</Label>
+		<Label layoutX="167.0" layoutY="769.0" text="사이다"
+			textFill="#3aab2e">
+			<font>
+				<Font size="15.0" />
+			</font>
+		</Label>
+		<VBox layoutX="157.0" layoutY="663.0" prefHeight="61.0"
+			prefWidth="202.0" spacing="10.0">
 			<children>
-				<CheckBox fx:id="sa500" graphicTextGap="200.0" layoutX="167.0" layoutY="663.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="175.0" text="500ml      1,000원" userData="사이다500ml">
+				<CheckBox fx:id="co500" graphicTextGap="200.0"
+					layoutX="167.0" layoutY="663.0" onAction="#handleChkAction"
+					prefHeight="21.0" prefWidth="186.0" text="500ml       1,000원"
+					userData="콜라500ml">
 					<font>
 						<Font size="15.0" />
 					</font>
 				</CheckBox>
-				<CheckBox fx:id="sa125" layoutX="167.0" layoutY="696.0" onAction="#handleChkAction" prefHeight="21.0" prefWidth="174.0" text="1.25ml     2,000원" userData="사이다1.25ml">
+				<CheckBox fx:id="co125" layoutX="167.0" layoutY="696.0"
+					onAction="#handleChkAction" prefHeight="21.0" prefWidth="188.0"
+					text="1.25ml      2,000원" userData="콜라1.25ml">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</CheckBox>
+			</children>
+		</VBox>
+		<VBox layoutX="162.0" layoutY="790.0" prefHeight="61.0"
+			prefWidth="202.0" spacing="10.0">
+			<children>
+				<CheckBox fx:id="sa500" graphicTextGap="200.0"
+					layoutX="167.0" layoutY="663.0" onAction="#handleChkAction"
+					prefHeight="21.0" prefWidth="175.0" text="500ml      1,000원"
+					userData="사이다500ml">
+					<font>
+						<Font size="15.0" />
+					</font>
+				</CheckBox>
+				<CheckBox fx:id="sa125" layoutX="167.0" layoutY="696.0"
+					onAction="#handleChkAction" prefHeight="21.0" prefWidth="174.0"
+					text="1.25ml     2,000원" userData="사이다1.25ml">
 					<font>
 						<Font size="15.0" />
 					</font>
@@ -143,8 +183,10 @@
 			</children>
 		</VBox>
 		<Separator layoutY="47.0" prefHeight="3.0" prefWidth="140.0" />
-		<Separator layoutX="310.0" layoutY="47.0" prefHeight="3.0" prefWidth="140.0" />
-		<Button fx:id="ju" layoutX="326.0" layoutY="852.0" style="-fx-background-color: orange;" text="주문하기" textFill="WHITE">
+		<Separator layoutX="310.0" layoutY="47.0" prefHeight="3.0"
+			prefWidth="140.0" />
+		<Button fx:id="ju" layoutX="326.0" layoutY="852.0"
+			style="-fx-background-color: orange;" text="주문하기" textFill="WHITE">
 			<font>
 				<Font size="20.0" />
 			</font>

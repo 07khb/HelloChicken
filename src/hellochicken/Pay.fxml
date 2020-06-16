@@ -9,17 +9,20 @@
 <AnchorPane prefHeight="736.0" prefWidth="300.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellochicken.PayController">
 	<children>
 		<Label layoutX="14.0" layoutY="26.0" text="배송지 정보">
-         <font>
-            <Font size="13.0" />
-         </font></Label>
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Label>
 		<Label layoutX="12.0" layoutY="322.0" text="결제 방법">
-         <font>
-            <Font size="13.0" />
-         </font></Label>
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Label>
 		<Label layoutX="12.0" layoutY="402.0" text="주문 내역">
-         <font>
-            <Font size="13.0" />
-         </font></Label>
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Label>
 		<TextArea fx:id="address" layoutX="14.0" layoutY="48.0" prefHeight="83.0" prefWidth="271.0" />
 		<TextArea fx:id="list" layoutX="14.0" layoutY="430.0" prefHeight="200.0" prefWidth="271.0" />
 		<Button fx:id="btnorder" layoutX="90.0" layoutY="649.0" mnemonicParsing="false" onMouseClicked="#buttonOrderAction" prefHeight="54.0" prefWidth="124.0" style="-fx-background-color: orange;" text="주문하기" textAlignment="CENTER" textFill="WHITE">
@@ -30,19 +33,19 @@
 		<TextArea layoutX="14.0" layoutY="345.0" prefHeight="30.0" prefWidth="271.0" />
 		<Label layoutX="40.0" layoutY="353.0" text="현금 결제" />
 		<Label layoutX="172.0" layoutY="353.0" text="카드 결제" />
-		<fx:define>
-			<ToggleGroup fx:id="group5"></ToggleGroup>
-		</fx:define>
-		<RadioButton layoutX="103.0" layoutY="352.0" toggleGroup="$group5"/>
-		<RadioButton layoutX="245.0" layoutY="352.0" toggleGroup="$group5"/>
-      <Label layoutX="14.0" layoutY="147.0" text="요청사항">
-         <font>
-            <Font size="13.0" />
-         </font>
-      </Label>
-      <Label layoutX="16.0" layoutY="246.0" text="라이더님께" />
-      <Label layoutX="16.0" layoutY="183.0" text="가게 사장님께" />
-      <TextField layoutX="15.0" layoutY="198.0" prefHeight="30.0" prefWidth="271.0" promptText="예) 덜 맵게 해주세요." />
-      <TextField layoutX="15.0" layoutY="261.0" prefHeight="30.0" prefWidth="271.0" promptText="예) 문 앞에 두고 벨 눌러주세요." />
+		<RadioButton layoutX="103.0" layoutY="352.0">
+         <toggleGroup>
+            <ToggleGroup fx:id="group" />
+         </toggleGroup></RadioButton>
+		<RadioButton layoutX="245.0" layoutY="352.0" selected="true" toggleGroup="$group" />
+		<Label layoutX="14.0" layoutY="147.0" text="요청사항">
+			<font>
+				<Font size="13.0" />
+			</font>
+		</Label>
+		<Label layoutX="16.0" layoutY="246.0" text="라이더님께" />
+		<Label layoutX="16.0" layoutY="183.0" text="가게 사장님께" />
+		<TextField layoutX="15.0" layoutY="198.0" prefHeight="30.0" prefWidth="271.0" promptText="예) 덜 맵게 해주세요." />
+		<TextField layoutX="15.0" layoutY="261.0" prefHeight="30.0" prefWidth="271.0" promptText="예) 문 앞에 두고 벨 눌러주세요." />
 	</children>
 </AnchorPane>

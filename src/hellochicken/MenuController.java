@@ -37,9 +37,6 @@ public class MenuController implements Initializable {
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
 
-		
-		
-		
 //		if (set2.isSelected()) {
 //			System.out.println(set2.getUserData());
 //		}
@@ -76,16 +73,12 @@ public class MenuController implements Initializable {
 //			}
 //		});
 
-		
-		
-		
-		
 		ju.setOnAction(new EventHandler<ActionEvent>() {
 			@Override
 			public void handle(ActionEvent event) {
 				Stage addStage = new Stage(StageStyle.UTILITY);
 				addStage.initModality(Modality.WINDOW_MODAL);
-				addStage.initOwner(ju.getScene().getWindow());	
+				addStage.initOwner(ju.getScene().getWindow());
 				try {
 					Parent parent = FXMLLoader.load(getClass().getResource("Pay.fxml"));
 					Scene scene = new Scene(parent);
@@ -100,45 +93,45 @@ public class MenuController implements Initializable {
 					String stri8 = "";
 					String stri9 = "";
 					String stri10 = "";
-					if(hu.isSelected()) {
+					if (hu.isSelected()) {
 						sum += 10000;
-						stri1 = "후라이드 10000원 " + "\n";
+						stri1 = "후라이드 " + " 10000원 " + "\n";
 					}
-					if(yang.isSelected()) {
+					if (yang.isSelected()) {
 						sum += 11000;
-						stri2 = "양념 11000원 "+ "\n";
+						stri2 = "양념 " + " 11000원 " + "\n";
 					}
-					if(gan.isSelected()) {
+					if (gan.isSelected()) {
 						sum += 11000;
-						stri3 = "간장 11000원 "+ "\n";
+						stri3 = "간장 " + " 11000원 " + "\n";
 					}
-					if(set1.isSelected()) {
+					if (set1.isSelected()) {
 						sum += 12000;
-						stri4 = "후라이드 + 간장 12000원 "+ "\n";
+						stri4 = "후라이드 + 간장 12000원 " + "\n";
 					}
-					if(set2.isSelected()) {
+					if (set2.isSelected()) {
 						sum += 12000;
-						stri5 = "후라이드 + 양념 12000원 "+ "\n";
+						stri5 = "후라이드 + 양념 12000원 " + "\n";
 					}
-					if(set3.isSelected()) {
+					if (set3.isSelected()) {
 						sum += 13000;
-						stri6 = "양념 + 간장 13000원 "+ "\n";
+						stri6 = "양념 + 간장 13000원 " + "\n";
 					}
-					if(co500.isSelected()) {
+					if (co500.isSelected()) {
 						sum += 1000;
-						stri7 = "콜라 500ml 1000원 "+ "\n";
+						stri7 = "콜라 500ml 1000원 " + "\n";
 					}
-					if(co125.isSelected()) {
+					if (co125.isSelected()) {
 						sum += 2000;
-						stri8 = "콜라 1.25L 2000원 "+ "\n";
+						stri8 = "콜라 1.25L 2000원 " + "\n";
 					}
-					if(sa500.isSelected()) {
+					if (sa500.isSelected()) {
 						sum += 1000;
-						stri9 = "사이다 500ml 1000원 "+ "\n";
+						stri9 = "사이다 500ml 1000원 " + "\n";
 					}
-					if(sa125.isSelected()) {
+					if (sa125.isSelected()) {
 						sum += 2000;
-						stri10 = "사이다 1.25L 2000원 "+ "\n";
+						stri10 = "사이다 1.25L 2000원 " + "\n";
 					}
 					String str1 = String.valueOf(stri1);
 					String str2 = String.valueOf(stri2);
@@ -151,8 +144,8 @@ public class MenuController implements Initializable {
 					String str9 = String.valueOf(stri9);
 					String str10 = String.valueOf(stri10);
 					String str = "총 " + String.valueOf(sum) + "원 ";
-					TextArea area = (TextArea)parent.lookup("#list");
-					area.setText(str1+str2+str3+str4+str5+str6+str7+str8+str9+str10+"\n"+str);
+					TextArea area = (TextArea) parent.lookup("#list");
+					area.setText(str1 + str2 + str3 + str4 + str5 + str6 + str7 + str8 + str9 + str10 + "\n" + str);
 					addStage.setScene(scene);
 					addStage.setResizable(false);
 					addStage.show();
@@ -166,10 +159,10 @@ public class MenuController implements Initializable {
 
 	public void handleChkAction(ActionEvent e) {
 		if (hu.isSelected()) {
-		} 
+		}
 		if (yang.isSelected()) {
-		} 
+		}
 		if (gan.isSelected()) {
-		} 
+		}
 	}
 }

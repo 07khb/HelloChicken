@@ -9,7 +9,8 @@ import java.sql.SQLException;
 import java.util.ResourceBundle;
 
 import hellochicken.ConnectionUtil;
-
+import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
@@ -120,6 +121,10 @@ public class LoginController implements Initializable {
 	private void setLblError(Color color, String text) {
 		lblErrors.setTextFill(color);
 		lblErrors.setText(text);
+	}
+	
+	public void handleOutAction(MouseEvent e1) {
+		Platform.exit();
 	}
 
 }

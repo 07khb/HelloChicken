@@ -1,11 +1,17 @@
 package hellochicken;
 
+import java.io.IOException;
 import java.net.URL;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.time.format.DateTimeFormatter;
 import java.util.ResourceBundle;
+import java.util.Scanner;
 
+import javafx.application.Platform;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -19,6 +25,9 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.HBox;
 import javafx.stage.Popup;
 import javafx.stage.Stage;
@@ -38,7 +47,7 @@ public class JoinController implements Initializable{
 	public void initialize(URL location, ResourceBundle resources) {
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
-			conn = DriverManager.getConnection("jdbc:oracle:thin:@localhost:1521:xe", "hr", "hr");
+			conn = DriverManager.getConnection("jdbc:oracle:thin:@192.168.0.118:1521:xe", "hr", "hr");
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
