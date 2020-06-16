@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hellochicken.Controller">
+	<children>
+		<TextField fx:id="txtId" layoutX="70.0" layoutY="125.0" prefHeight="40.0" prefWidth="360.0" />
+		<PasswordField fx:id="password" layoutX="72.0" layoutY="235.0" prefHeight="40.0" prefWidth="360.0" />
+		<Label layoutX="70.0" layoutY="85.0" text="아이디">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="70.0" layoutY="195.0" text="비밀번호">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="72.0" layoutY="305.0" text="이 름">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Label layoutX="72.0" layoutY="415.0" text="주 소">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+      <TextField fx:id="txtName" layoutX="72.0" layoutY="345.0" prefHeight="40.0" prefWidth="360.0" />
+		<TextField fx:id="address" layoutX="72.0" layoutY="455.0" prefHeight="40.0" prefWidth="360.0" />
+		<TextField fx:id="phoneNumber" layoutX="72.0" layoutY="565.0" prefHeight="40.0" prefWidth="360.0" />
+		<Label layoutX="72.0" layoutY="525.0" text="전화번호">
+			<font>
+				<Font size="20.0" />
+			</font>
+		</Label>
+		<Button fx:id="btnJoin" layoutX="193.0" layoutY="635.0" mnemonicParsing="false" onAction="#handlebtnJoinAction" text="가입하기">
+			<font>
+				<Font size="22.0" />
+			</font>
+		</Button>
+		<Text fill="#ffbf00" layoutX="148.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Hello Chicken">
+			<font>
+				<Font size="32.0" />
+			</font>
+         <effect>
+            <Reflection />
+         </effect>
+		</Text>
+	</children>
+</AnchorPane>
